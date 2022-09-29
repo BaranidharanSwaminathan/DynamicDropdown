@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown</title>
+    <link rel="Stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="dropdown">
+            <label>Select Input</label>
+            <div class="input">
+                <select class="dropdown-list" id="dropdown-list">
+                    <option onclick="togglefunction()" id="toggle">Toggle</option>
+                    <option id="input">input</option>
+                    <option id="image">image</option>
+                    <option id="button">button</option>
+                    <option id="textarea">textarea</option>
+                </select>
+            </div>
+        </div>
+        <div class="output-area">
+            <div class="toggle-outer">
+                <button onclick="togleclick()">Click me</button>
+                <div class="toggle-content">
+                    I'am Here...
+                </div>
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
+    <script src="./dropdown.js"></script>
+</body>
+</html>
