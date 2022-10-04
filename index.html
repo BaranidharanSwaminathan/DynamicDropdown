@@ -7,30 +7,43 @@
     <title>Dropdown</title>
     <link rel="Stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="container">
-        <div class="dropdown">
-            <label>Select Input</label>
-            <div class="input">
-                <select class="dropdown-list" id="dropdown-list">
-                    <option onclick="togglefunction()" id="toggle">Toggle</option>
-                    <option id="input">input</option>
-                    <option id="image">image</option>
-                    <option id="button">button</option>
-                    <option id="textarea">textarea</option>
-                </select>
-            </div>
-        </div>
-        <div class="output-area">
-            <div class="toggle-outer">
-                <button onclick="togleclick()">Click me</button>
-                <div class="toggle-content">
-                    I'am Here...
+        <div class="outputArea">
+            <div class="imageOuter">
+                <div class="input" id="input-show">
+                    <label>Type your input here...</label>
+                    <div class="inputOuter">
+                        <input type="text">
+                        <img src="./images/send-button.png" alt="send">
+                    </div>
+                </div>
+                <img src="./images/hello.webp" class="image" alt="hello-image">
+                <div class="toggle" id="toggle-outer">
+                    <button onclick="toggleClick()" class="toggleBtn">Click here to Toggle</button>
+                    <div>
+                        <img src="./images/hi.jpg" alt="Hi" class="on">
+                        <img src="./images/wow.jpg" alt="Wow" class="off">
+                    </div>
+                </div>
+                <div class="tetxarea" id="textarea-outer">
+                    <div>Type here....</div>
+                    <textarea cols="60" rows="15"></textarea>
                 </div>
             </div>
-            <div>
-                
-            </div>
+        </div>
+        <div class="dropdown">
+            <div class="dropdownHead"><span onclick="dropdownClick()">Select Input</span>
+                <img onclick="dropdownClick()" src="./images/down-chevron.png" alt="dropdownarrow">
+                <div class="dropdownList">
+                    <div onclick="inputClick()" id="input">Input</div>
+                    <div onclick="toggleclick()" id ="toggle">Toggle</div>
+                    <div onclick="imageClick()" id="image">Image</div>
+                    <div onclick="textareaClick()" id="textarea">Textarea</div>
+                </div>
+            </div>   
+           
         </div>
     </div>
     <script src="./dropdown.js"></script>
